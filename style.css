@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+body .btn-primary{
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 9px 24px;
+    font-size: 16px;
+
+    position: relative;
+    z-index: 1;
+}
+
+body .btn-primary::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .4s;
+}
+body .btn-primary:hover::after{
+    width: 100% !important;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+
+
+/**** Header Section ****/
+.main-header .container-fluid, .slider-section .container-fluid{
+    max-width: 1400px;
+}
+ul.primary-menu{}
+ul.primary-menu li{}
+ul.primary-menu li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+ul.primary-menu li a:hover{}
+
+
+
+/**** Dropdown Menu ****/
+ul.primary-menu li{
+    position: relative;
+}
+ul.primary-menu li ul{
+    position: absolute;
+    width: 250px;
+    left: 0;
+    top: 130%;
+    background-color: #fafafa;
+    list-style: none;
+    padding: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    box-shadow: 2px 2px 13px #e4dede;;
+}
+ul.primary-menu li ul li{
+    flex-direction: column;
+}
+ul.primary-menu li ul li a{
+    transition: .4s;
+}
+
+
+ul.primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 110%;
+}
+ul.primary-menu li ul li:hover a{
+    letter-spacing: .8px;
+    color: #e73a3e;
+}
+
+
+
+.header-info{}
+.header-search{
+    width: 60px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    margin-right: 20px;
+}
+.header-search span{
+    font-size: 22px;
+}
+
+.header-call-info{
+    width: 220px;
+}
+.header-call-icon{}
+.header-call-icon span{
+    font-size: 32px;
+    color: #e73a3e;
+}
+
+.header-call-info{}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    color: #111;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.header-button{}
+.header-button a{}
+
+
+/**** Banner Section ****/
+.slider-section{
+    background: url(./image/csm_banner-021-spendemanagement.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider-content-wrap{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/**** Pricing Table Section ****/
+
+
+
+/**** Team Section  ****/
+
+
+
+/**** Newsletter Section ****/
+
+
+
+/**** About Section ****/
+
+
+
+/**** Testimonial Section ****/
+
+
+
+/**** Contact Section ****/
+
+
+
+/**** Footer Section ****/
+
+
