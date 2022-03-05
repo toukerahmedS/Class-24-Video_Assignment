@@ -342,7 +342,7 @@ ul.primary-menu li ul li:hover a{
     left: 0;
     background-color: #e73a3e;
     border-radius: 50%;
-    animation: playbtn 1.2s ease-in-out infinite;
+    animation: playbtn 1.2s ease-out infinite;
 }
 @keyframes playbtn{
     0%,30%{
